@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(225deg, #4568DC , #B06AB3);
+}
+
+.container{
+    margin: 20px auto 40px;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+}
+
+/* --------------------------------------------------Left-Pane-------------------------------------------- */
+
+.left-pane{
+    width: 30%;
+    background-color: #DDE6ED;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+}
+.logo{
+    flex: 0.12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo h5{
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+}
+
+.left-pane hr{
+    width: 90%;
+    height: 3px;
+    background-color:#9DB2BF;
+    margin: auto;
+}
+.group-section{
+    display: flex;
+    flex-direction: column;
+    flex: 0.85;
+}
+.search-group{
+    display: flex;
+    justify-content: space-between;
+}
+.search-group input{
+    flex: 1;
+    width: 75%;
+    border: 0;
+    outline:none;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin: 5px 2px 3px;
+}
+
+.search-group button{
+    margin: auto;
+    padding: 4px 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.group-list{
+    flex-grow:1 ;
+    overflow-y: scroll;
+}
+.group-list ul li {
+    list-style: none;
+    margin: 10px auto;
+    text-align: center;
+    border-bottom: 1.2px solid #aeb8bd;
+    cursor: pointer;    
+}
+.group-section .add-group{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: #B8B5FF;
+    cursor: pointer;
+
+}
+
+/* ---------------------------------------------Right-pane---------------------------------------------- */
+
+.right-pane{
+    width: 70%;
+    background-color: rgb(253, 249, 249);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+}
+
+.chat-header{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.1;
+    border-bottom: 2px solid #9DB2BF;
+}
+.chat-header h5{
+    font-size: 25px;
+    font-weight: 550;
+    margin: 10px 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.chat-header .log-out{
+    background-color: #ED2B2A;
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.chat-window{
+    flex: 0.85;
+    overflow-y: scroll;
+}
+.message{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.incoming,.outgoing{
+    margin: 8px 5px;
+}
+.incoming p,.outgoing p{
+    background-color: #D3F4FF;
+    width: 25%;
+    margin: 0 5px;
+    padding: 5px 6px;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+    font-size: 16px;    
+}
+.outgoing{
+    justify-content: flex-end;
+}
+.outgoing p{
+    background-color: #FFBF9B;
+}
+.chat-message{
+    flex: 0.05;
+    display:flex;
+    justify-content: space-between;
+}
+.chat-message input{
+    flex: 1;
+    border: 1.5px solid #DDE6ED;
+    outline:none;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin: 3px 2px;
+}
+
+.chat-message button{
+    margin: 5px 2px 5px;
+    padding: 2px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------Home------------------------------------------------------ */
+
+.card{
+    background-color: rgb(253, 249, 249);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 40%;
+    border-radius: 20px;
+    margin: 40px auto 60px;
+}
+
+.home-logo{
+    margin: 2.5px;
+    padding: 10px;
+}
+
+.home-logo h5{
+    font-size: 45px;
+}
+
+.home-line{
+    width: 90%;
+    height: 3px;
+    background-color:#9DB2BF;
+    margin: 1px auto;
+}
+
+.profile-picture{
+    flex:0.6;
+    display: flex;
+    justify-content: center;
+    margin: 2.5px;
+    padding: 10px;
+}
+.profile-picture img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1.5px solid #DDE6ED;
+    margin: auto;
+}
+
+.upload{
+    background-color: #B8B5FF;
+    border:1.5px solid black ;
+    color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    right: 150px;
+}
+
+.upload i{
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+.card input{
+    width: 90%;
+    border: 1.5px solid #DDE6ED;
+    outline:none;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin: 4px auto;
+}
+
+.join-chat{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin: 4px auto;
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: #B8B5FF;
+    cursor: pointer;
+}

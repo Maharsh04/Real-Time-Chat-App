@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <script src="https://kit.fontawesome.com/f141c7fb9d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-pane">
+            <div class="logo">
+                <h5>Chat App</h5>
+            </div>
+            <hr>
+            <div class="group-section">
+                <div class="search-group">
+                    <input type="text" placeholder="Search group...">
+                    <button onclick="searchGroup()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="group-list">
+                    <ul>
+                        <li>Group-1</li>
+                        <li>Group-2</li>
+                        <li>Group-3</li>
+                        <li>Group-4</li>
+                    </ul>
+                </div>
+                <button class="add-group" onclick="addGroup()">Add Group</button>
+            </div>
+        </div>
+        <div class="right-pane">
+            <div class="chat-header">
+                <h5>Group-1</h5>
+                <div class="log-out">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+            <div class="chat-window">
+                <div class="incoming message">
+                    <div class="profile">
+                        <img src="/img/Maharsh.jpg" alt="User">
+                        <h6>User-1</h6>
+                    </div>
+                    <p>Hello, How are you ?</p>
+                </div>
+                <div class="outgoing message">
+                    <p>I am fine. What about you ?</p>
+                    <div class="profile">
+                        <img src="/img/Maharsh.jpg" alt="User">
+                        <h6>User-2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message">
+                <input type="text" class="chat" placeholder="Enter message here...">
+                <button class="send"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
