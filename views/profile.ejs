@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://kit.fontawesome.com/f141c7fb9d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/socket.io/socket.io.js" ></script>
+</head>
+<body>
+    <div class="card">
+        <div class="logo home-logo">
+            <h5>Chat App</h5>
+        </div>
+        <hr class="home-line">
+        <div class="profile-picture">
+            <img alt="user">
+            <input type="file" id="file" style="display: none" accept="image/*">
+            <label for="file" class="upload"><i class="fa-solid fa-pen"></i></label>
+        </div>
+        <input type="text" class="username" placeholder="Enter username..." required>
+        <button class="join-chat">Join chat</button>
+    </div>
+    <script src="/profile.js"></script>
+</body>
+</html>

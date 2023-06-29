@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="/socket.io/socket.io.js"></script>
 </head>
 
@@ -20,20 +20,20 @@
                 <h5>Chat App</h5>
             </div>
             <hr>
-            <div class="group-section">
-                <div class="search-group">
-                    <input type="text" placeholder="Search group...">
-                    <button onclick="searchGroup()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="participant-section">
+                <div class="search-participant">
+                    <input type="text" placeholder="Search participant...">
+                    <button onclick="searchParticipant()"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <div class="group-list">
+                <div class="participant-list">
                     <ul>
-                        <li>Group-1</li>
-                        <li>Group-2</li>
-                        <li>Group-3</li>
-                        <li>Group-4</li>
+                        <li>Participant-1</li>
+                        <li>Participant-2</li>
+                        <li>Participant-3</li>
+                        <li>Participant-4</li>
                     </ul>
                 </div>
-                <button class="add-group" onclick="addGroup()">Add Group</button>
+                <button class="add-participant" onclick="addParticipant()">Add Participant</button>
             </div>
         </div>
         <div class="right-pane">
@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

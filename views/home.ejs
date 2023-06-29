@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="/socket.io/socket.io.js" ></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="card">
@@ -17,14 +16,16 @@
             <h5>Chat App</h5>
         </div>
         <hr class="home-line">
-        <div class="profile-picture">
-            <img src="/img/default.png" alt="user">
-            <input type="file" id="file" style="display: none" accept="image/*">
-            <label for="file" class="upload"><i class="fa-solid fa-pen"></i></label>
+        <div class="home-photo">
+            <img src="/img/home.jpg" alt="Home">
         </div>
-        <input type="text" class="username" placeholder="Enter username..." required>
-        <button class="join-chat">Join chat</button>
+        <button class="signin">Sign in with Google</button>
     </div>
-    <script src="home.js"></script>
+    <script>
+        const signin=document.querySelector('.signin');
+        signin.addEventListener('click',()=>{
+            window.location.href='/google';
+        })
+    </script>
 </body>
 </html>

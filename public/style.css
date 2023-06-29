@@ -43,16 +43,16 @@ body{
     background-color:#9DB2BF;
     margin: auto;
 }
-.group-section{
+.participant-section{
     display: flex;
     flex-direction: column;
     flex: 0.85;
 }
-.search-group{
+.search-participant{
     display: flex;
     justify-content: space-between;
 }
-.search-group input{
+.search-participant input{
     flex: 1;
     width: 75%;
     border: 0;
@@ -65,7 +65,7 @@ body{
     margin: 5px 2px 3px;
 }
 
-.search-group button{
+.search-participant button{
     margin: auto;
     padding: 4px 4px;
     width: 40px;
@@ -74,18 +74,18 @@ body{
     cursor: pointer;
 }
 
-.group-list{
+.participant-list{
     flex-grow:1 ;
     overflow-y: scroll;
 }
-.group-list ul li {
+.participant-list ul li {
     list-style: none;
     margin: 10px auto;
     text-align: center;
     border-bottom: 1.2px solid #aeb8bd;
     cursor: pointer;    
 }
-.group-section .add-group{
+.participant-section .add-participant{
     font-size: 15px;
     font-weight: 600;
     display: block;
@@ -200,7 +200,7 @@ body{
     cursor: pointer;
 }
 
-/* -----------------------------------------------------Home------------------------------------------------------ */
+/* -----------------------------------------------------Profile------------------------------------------------------ */
 
 .card{
     background-color: rgb(253, 249, 249);
@@ -274,6 +274,33 @@ body{
 }
 
 .join-chat{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin: 4px auto;
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: #B8B5FF;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------Home-------------------------------------------------------- */
+
+.home-photo{
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+}
+.signin{
     font-size: 15px;
     font-weight: 600;
     display: block;
